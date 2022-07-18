@@ -1,0 +1,286 @@
+@import "./button.css";
+@import url("./search-input.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    width: 100%;
+}
+
+.Heading{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.Heading div{
+    border: 1px solid greenyellow;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Heading nav {    
+  border: 1px solid red;
+  width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Heading nav ul{
+    list-style-type: none;
+    display: flex;
+    width: 450px;
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.Heading nav ul li{
+    margin: 0 20px;
+    color: rgb(121, 118, 118);
+    font-size: 13px;
+}
+
+.Heading nav ul li form{
+    padding: 0 0 3px 0;
+    height: 20px;
+    color: rgb(168, 165, 165);
+}
+
+
+.Heading img{
+    width: 25px;
+}
+
+.hero{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-title{
+    border: 1px solid;
+    margin-right: 10px;
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero h1{
+    font-size: 37px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    color: rgb(22, 21, 21);
+}
+
+.hero p{
+    border-left: 1px solid;
+    width: 380px;
+    color: gray;
+    font-size: 13px;
+    word-spacing: 3px;
+    line-height: 19px;
+    padding: 0 10px 0 20px;
+    margin-bottom: 40px;
+}
+
+.hero-image img{
+    border: 1px solid;
+    object-fit: contain;
+    width: 600px;
+    height: 550px;
+    float: right;
+    object-position: 290px;
+}
+
+
+
+
+.middle{
+    border: 1px solid;
+    height: 950px;
+}
+
+.middle .description{
+    border: 1px solid chocolate;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 300px;
+}
+
+
+
+.text-1{
+    border: 1px solid;
+    margin: 0 10px;
+    height: 230px;
+    line-height: 23px;
+    font-size: 14px;
+    width: 300px;
+}
+
+.text-2{
+    border: 1px solid;
+    margin: 0 10px;
+    height: 230px;
+    line-height: 23px;
+    font-size: 14px;
+    width: 300px;
+}
+
+.text-3{
+    border: 1px solid;
+    margin: 0 10px;
+    height: 230px;
+    line-height: 23px;
+    font-size: 14px;
+    width: 300px;
+}
+
+h5{
+    font-size: 15px;
+    color: rgb(44, 43, 43);
+    margin-bottom: 30px;
+}
+
+.link{
+    border: 1px solid;
+    display: flex;
+}
+
+.line{
+   width: 13%;
+   height: 2px;
+   padding:  0px 0;
+   margin:  10px 14px 0 0 ;
+   background-color: rgb(189, 57, 57);
+
+}
+
+.link:hover{
+   width: 50%;
+   transition: 1s;
+   cursor: pointer;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(189, 57, 57);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link a:hover{
+   margin-left: 5px;
+   transition: 1s;     
+}
+
+
+.Showcase{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.Showcase img{
+    width: 400px;
+}
+
+.Title{
+    border: 1px solid;
+    width: 50%;
+    margin-top: 120px;
+}
+
+.Title h1{
+    color: rgb(37, 37, 37);
+    font-size: 35px;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.Title p{
+    margin-bottom: 40px;
+    padding-left: 30px;
+    color: gray;
+    width: 400px;
+    line-height: 19px;
+    word-spacing: 3px;
+    font-size: 12px;
+    border-left: 1px solid rgb(82, 75, 75);
+}
+
+ .Title h6{
+    padding-left:27px;
+    width: 120px;
+ }
+
+
+
+
+
+.footer{
+    background: url(../img/runners.jpg);
+    border: 1px solid hotpink;
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.footer .details{
+    width: 400px;
+    height: max-content;
+    margin: 150px 0 0 50px;
+    grid-column: 7 / span 5;
+}
+
+.details h1{
+    color: white;
+    font-size: 34px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.details p{
+    font-size: 13px;
+    word-spacing: 3px;
+    line-height: 13px;
+    margin-bottom: 40px;
+    color: white;
+    border-left: 2px solid white;
+    padding: 0 0 0 40px;
+}
+
+
+@media (max-width: 900px){
+    body{
+        background-color: brown;
+    }
+
+
+.hero{
+    border: 1px solid darkmagenta;
+}
+
+
+
+}

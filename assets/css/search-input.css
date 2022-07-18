@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+form{
+}
+
+form input{
+    padding:  7px 0px;
+    height: 7px;
+    outline-style: none;
+}
+form input::placeholder{
+    font-size: 14px;
+    width: 20px;
+    color: rgb(8, 8, 8);
+}
