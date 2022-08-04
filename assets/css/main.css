@@ -59,6 +59,10 @@ body{
 
 .Heading img{
     width: 25px;
+    animation-name: fade;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
 }
 
 .hero{
@@ -264,6 +268,34 @@ h5{
     padding: 0 0 0 40px;
 }
 
+.from-left{
+   transform: translateX(-50%);
+}
+
+.from-right{
+   transform: translateX(50%);
+}
+
+.from-left,
+.from-right{
+    transition: opacity 200ms ease-in, transform 1s ease-in-out;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear{
+    opacity: 1; 
+    transform: translateX(0);
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
+}
 
 @media (max-width: 900px){
     body{
