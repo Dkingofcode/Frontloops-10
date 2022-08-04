@@ -297,14 +297,285 @@ h5{
     opacity: 1;
 }
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     body{
+       background-color:rgb(255, 255, 255);
+       overflow-x: hidden;
+       scroll-behavior: smooth;
     }
 
+    .Heading{
+        display: flex;
+        margin-right: 90px;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+    
+    .Heading div{
+        width: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Heading nav {    
+      width: 290px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    .Heading nav ul{
+        list-style-type: none;
+        display: flex;
+        width: 190px;
+        margin-top: 10px;
+        padding: 10px 0;
+        justify-content: flex-end;
+    }
+    
+    .Heading nav ul li{
+        margin: 0 20px 0 0;
+        color: rgb(121, 118, 118);
+        font-size: 13px;
+    }
+    
+    .Heading nav ul li form{
+        padding: 0 0 3px 0;
+        height: 20px;
+        color: rgb(168, 165, 165);
+        border-bottom: 1px solid gray;
+    }
+    
+    
+    .Heading img{
+        width: 25px;
+        animation-name: fade;
+        animation-duration: 3s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+    }
+    
+    .hero{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 600px;
+        display: flex;
+    }
+    
+    .hero-title{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: flex-end;
+    }
+    
+    .hero h1{
+        font-size: 27px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+        color: rgb(22, 21, 21);
+    }
+    
+    .hero p{
+        border-left: 1px solid;
+        width: 100%;
+        color: gray;
+        font-size: 13px;
+        word-spacing: 3px;
+        line-height: 19px;
+        padding: 0 10px 0 20px;
+        margin-bottom: 40px;
+    }
+    
+    .hero-image{
+        margin: 0 auto;
+    }
+    
+    .hero-image img{
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        object-position: 0px;
+    }
+    
+    
 
 .hero{
+   display: flex;
+   flex-direction: column;
 }
 
 
 
+
+.middle{
+    height: 600px;
+    width: 100%;
+}
+
+.middle .description{
+    display: flex;
+    width: 100%;
+    margin: 190px auto 0 auto;
+    flex-direction: column;
+    padding: 0 10px;
+    height: 590px;
+
+}
+
+
+
+.text-1{
+    margin: 0 auto;
+    height: 290px;
+    line-height: 23px;
+    font-size: 14px;
+    width: 80%;
+}
+
+.text-2{
+    margin: 0 auto;
+    height: 230px;
+    line-height: 23px;
+    font-size: 14px;
+    width: 80%;
+}
+
+.text-3{
+    margin: 0 auto;
+    height: 230px;
+    line-height: 23px;
+    font-size: 14px;
+    width: 80%;
+}
+
+h5{
+    font-size: 15px;
+    color: rgb(44, 43, 43);
+    margin-bottom: 30px;
+}
+
+.link{
+    display: flex;
+}
+
+.line{
+   width: 13%;
+   height: 2px;
+   padding:  0px 0;
+   margin:  10px 14px 0 0 ;
+   background-color: rgb(189, 57, 57);
+
+}
+
+/*.link:hover{
+   width: 60%;
+   transition: all 1s ease-in;
+   cursor: pointer;
+}*/
+
+.link a{
+    text-decoration: none;
+    color: rgb(189, 57, 57);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link a:hover{
+   margin-left: 5px;
+   transition: 1s;     
+}
+
+
+.Showcase{
+    display: flex;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    flex-direction: column;
+    padding: 0 2px;
+}
+
+.Showcase img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Title{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Title h1{
+    color: rgb(37, 37, 37);
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.Title p{
+    margin-bottom: 40px;
+    padding-left: 30px;
+    color: gray;
+    width: 70%;
+    margin: 0 auto;
+    line-height: 19px;
+    word-spacing: 3px;
+    font-size: 12px;
+    height: 40%;
+    margin-bottom: 20px;
+    border-left: 1px solid rgb(82, 75, 75);
+}
+
+ .Title h6{
+    padding-left:27px;
+    width: 120px;
+ }
+
+ .footer{
+    background: url(../img/runners.jpg);
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    margin-top: 990px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .details{
+    width: 100%;
+    height: max-content;
+    margin: 90px 0 0 50px;
+    grid-column: 2 / span 3;
+}
+
+.details h1{
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.details p{
+    font-size: 10px;
+    word-spacing: 3px;
+    width: 70%;
+    line-height: 13px;
+    margin-bottom: 40px;
+    color: white;
+    border-left: 2px solid white;
+    padding: 0 0 0 10px;
+}
+ 
+ .button{
+    padding-left: 10px; 
+    padding-bottom: 10px;
+ } 
 }
